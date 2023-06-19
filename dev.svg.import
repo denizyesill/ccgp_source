@@ -1,0 +1,13 @@
+[remap]
+
+importer="image"
+type="Image"
+path="res://.import/dev.svg-c993d45fc68abe338d36543abaf3349e.image"
+
+[deps]
+
+source_file="res://dev.svg"
+dest_files=[ "res://.import/dev.svg-c993d45fc68abe338d36543abaf3349e.image" ]
+
+[params]
+
