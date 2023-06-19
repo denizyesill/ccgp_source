@@ -1,0 +1,307 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://MessageBox01.png" type="Texture" id=1]
+[ext_resource path="res://back.png" type="Texture" id=2]
+[ext_resource path="res://06aa80d5-419f-4967-ab9e-1eba2c472a9e.webp" type="Texture" id=3]
+[ext_resource path="res://3fa33f23-6cb3-4fcb-babd-89de07ad820d.webp" type="Texture" id=4]
+[ext_resource path="res://11c10e9b-0d6d-4239-b564-4a0b089aa656.webp" type="Texture" id=5]
+[ext_resource path="res://0e15b31c-7187-4f5f-847e-ce6415d9e6b2.webp" type="Texture" id=6]
+[ext_resource path="res://Box15.png" type="Texture" id=7]
+[ext_resource path="res://21fd6102-4b45-414d-bcd1-efbf27bce205.webp" type="Texture" id=8]
+[ext_resource path="res://03b14167-8033-4caa-a59f-29812ec9ed2c.webp" type="Texture" id=9]
+[ext_resource path="res://lvl3.png" type="Texture" id=10]
+[ext_resource path="res://6e0d52c6-525b-4baf-b368-b9d3d88a8e03.webp" type="Texture" id=11]
+[ext_resource path="res://Roboto-Regular.ttf" type="DynamicFontData" id=12]
+[ext_resource path="res://1ea0e214-ad51-481a-a3db-e1a53feae65a.webp" type="Texture" id=13]
+[ext_resource path="res://0c59d3a2-4e55-4b94-8909-99ab95a2b016.webp" type="Texture" id=14]
+[ext_resource path="res://8bb97dca-7aaa-4dd1-8c97-3f9d5e36e6c6.webp" type="Texture" id=15]
+[ext_resource path="res://110c12af-0dc3-4294-9363-81e0c12fdd70.webp" type="Texture" id=16]
+[ext_resource path="res://TechTree.gd" type="Script" id=17]
+
+[sub_resource type="DynamicFont" id=1]
+size = 15
+font_data = ExtResource( 12 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 32, 32 )
+
+[node name="TechTree" type="Node2D"]
+script = ExtResource( 17 )
+
+[node name="MessageBox01" type="Sprite" parent="."]
+position = Vector2( 512, 318 )
+scale = Vector2( 2.56, 1.78889 )
+texture = ExtResource( 1 )
+
+[node name="Back" type="Sprite" parent="MessageBox01"]
+position = Vector2( -0.390625, -1.11802 )
+scale = Vector2( 1.71452, 1.93303 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="Category3" type="RichTextLabel" parent="MessageBox01"]
+anchor_left = -0.0224999
+anchor_top = 0.00105163
+anchor_right = -0.0224999
+anchor_bottom = 0.0177183
+margin_left = -150.0
+margin_top = -133.379
+margin_right = -22.0
+margin_bottom = -117.379
+custom_fonts/normal_font = SubResource( 1 )
+text = "Technology Tree"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="close_ttree" type="Button" parent="MessageBox01"]
+margin_left = 178.906
+margin_top = -176.646
+margin_right = 197.906
+margin_bottom = -156.646
+text = "x"
+
+[node name="Research Center" type="Node2D" parent="."]
+position = Vector2( 80, 256 )
+
+[node name="ProgressBar3" type="ProgressBar" parent="Research Center"]
+margin_left = 488.0
+margin_top = 88.0
+margin_right = 936.0
+margin_bottom = 104.0
+rect_rotation = 46.6693
+rect_scale = Vector2( 0.334713, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+step = 1.0
+value = 17.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ProgressBar2" type="ProgressBar" parent="Research Center"]
+margin_left = 488.0
+margin_top = 88.0
+margin_right = 936.0
+margin_bottom = 104.0
+rect_rotation = -53.4298
+rect_scale = Vector2( 0.334713, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+step = 1.0
+value = 17.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ProgressBar" type="ProgressBar" parent="Research Center"]
+margin_left = 192.0
+margin_top = 88.0
+margin_right = 640.0
+margin_bottom = 104.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+step = 1.0
+value = 17.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="lvl6" type="Sprite" parent="Research Center"]
+modulate = Color( 0.333333, 0.333333, 0.333333, 1 )
+position = Vector2( 664, 96 )
+texture = ExtResource( 7 )
+
+[node name="lvl5" type="Sprite" parent="Research Center"]
+modulate = Color( 0.333333, 0.333333, 0.333333, 1 )
+position = Vector2( 576, 96 )
+texture = ExtResource( 7 )
+
+[node name="lvl4" type="Sprite" parent="Research Center"]
+modulate = Color( 0.333333, 0.333333, 0.333333, 1 )
+position = Vector2( 488, 96 )
+scale = Vector2( 0.125, 0.125 )
+texture = ExtResource( 11 )
+
+[node name="Lvl3" type="Sprite" parent="Research Center"]
+modulate = Color( 0.333333, 0.333333, 0.333333, 1 )
+position = Vector2( 400, 96.5 )
+scale = Vector2( 0.1, 0.109756 )
+texture = ExtResource( 10 )
+
+[node name="lvl2" type="Sprite" parent="Research Center"]
+modulate = Color( 0.333333, 0.333333, 0.333333, 1 )
+position = Vector2( 312, 96 )
+scale = Vector2( 0.0666667, 0.0833333 )
+texture = ExtResource( 9 )
+
+[node name="Area2D" type="Area2D" parent="Research Center"]
+
+[node name="lvl1-un" type="Sprite" parent="Research Center/Area2D"]
+position = Vector2( 224, 96 )
+scale = Vector2( 0.125, 0.125 )
+texture = ExtResource( 8 )
+
+[node name="lvl1" type="Sprite" parent="Research Center/Area2D"]
+modulate = Color( 0.333333, 0.333333, 0.333333, 1 )
+position = Vector2( 224, 96 )
+scale = Vector2( 0.125, 0.125 )
+texture = ExtResource( 8 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Research Center/Area2D"]
+position = Vector2( 224, 96 )
+shape = SubResource( 2 )
+
+[node name="Category2" type="RichTextLabel" parent="Research Center"]
+margin_left = 56.0
+margin_top = 88.0
+margin_right = 184.0
+margin_bottom = 104.0
+text = "Research Center"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Category3" type="RichTextLabel" parent="Research Center"]
+margin_left = 712.0
+margin_top = 88.0
+margin_right = 840.0
+margin_bottom = 104.0
+text = "Amphy Theathre"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="MilitaryCamp" type="Node2D" parent="."]
+position = Vector2( 80, 384 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ExCenProgressBar" type="ProgressBar" parent="MilitaryCamp"]
+margin_left = 192.0
+margin_top = 88.0
+margin_right = 640.0
+margin_bottom = 104.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+step = 1.0
+value = 17.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="lvl6" type="Sprite" parent="MilitaryCamp"]
+modulate = Color( 0.333333, 0.333333, 0.333333, 1 )
+position = Vector2( 664, 96 )
+texture = ExtResource( 7 )
+
+[node name="lvl5" type="Sprite" parent="MilitaryCamp"]
+modulate = Color( 0.333333, 0.333333, 0.333333, 1 )
+position = Vector2( 576, 96 )
+texture = ExtResource( 7 )
+
+[node name="lvl4" type="Sprite" parent="MilitaryCamp"]
+modulate = Color( 0.333333, 0.333333, 0.333333, 1 )
+position = Vector2( 488, 96 )
+scale = Vector2( 0.122865, 0.123654 )
+texture = ExtResource( 14 )
+
+[node name="lvl3" type="Sprite" parent="MilitaryCamp"]
+modulate = Color( 0.333333, 0.333333, 0.333333, 1 )
+position = Vector2( 400.092, 96.1874 )
+scale = Vector2( 0.124639, 0.124268 )
+texture = ExtResource( 15 )
+
+[node name="lvl2" type="Sprite" parent="MilitaryCamp"]
+modulate = Color( 0.333333, 0.333333, 0.333333, 1 )
+position = Vector2( 312, 96 )
+scale = Vector2( 0.125, 0.125 )
+texture = ExtResource( 13 )
+
+[node name="lvl1" type="Sprite" parent="MilitaryCamp"]
+modulate = Color( 0.333333, 0.333333, 0.333333, 1 )
+position = Vector2( 224, 96.0001 )
+scale = Vector2( 0.125, 0.125 )
+texture = ExtResource( 16 )
+
+[node name="ExchangeCenterTitle" type="RichTextLabel" parent="MilitaryCamp"]
+margin_left = 56.0
+margin_top = 88.0
+margin_right = 184.0
+margin_bottom = 104.0
+text = "Military Camp"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ExhangeCenter" type="Node2D" parent="."]
+position = Vector2( 80, 128 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ExCenProgressBar" type="ProgressBar" parent="ExhangeCenter"]
+margin_left = 192.0
+margin_top = 88.0
+margin_right = 640.0
+margin_bottom = 104.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+step = 1.0
+value = 17.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="lvl6" type="Sprite" parent="ExhangeCenter"]
+modulate = Color( 0.333333, 0.333333, 0.333333, 1 )
+position = Vector2( 664, 96 )
+texture = ExtResource( 7 )
+
+[node name="lvl5" type="Sprite" parent="ExhangeCenter"]
+modulate = Color( 0.333333, 0.333333, 0.333333, 1 )
+position = Vector2( 576, 96 )
+texture = ExtResource( 7 )
+
+[node name="lvl4" type="Sprite" parent="ExhangeCenter"]
+modulate = Color( 0.333333, 0.333333, 0.333333, 1 )
+position = Vector2( 488, 96 )
+scale = Vector2( 0.125, 0.125 )
+texture = ExtResource( 4 )
+
+[node name="lvl3" type="Sprite" parent="ExhangeCenter"]
+modulate = Color( 0.333333, 0.333333, 0.333333, 1 )
+position = Vector2( 400, 96 )
+scale = Vector2( 0.125, 0.125 )
+texture = ExtResource( 5 )
+
+[node name="lvl2" type="Sprite" parent="ExhangeCenter"]
+modulate = Color( 0.333333, 0.333333, 0.333333, 1 )
+position = Vector2( 312, 96 )
+scale = Vector2( 0.0833333, 0.125 )
+texture = ExtResource( 3 )
+
+[node name="lvl1" type="Sprite" parent="ExhangeCenter"]
+modulate = Color( 0.333333, 0.333333, 0.333333, 1 )
+position = Vector2( 224, 96 )
+scale = Vector2( 0.125, 0.125 )
+texture = ExtResource( 6 )
+
+[node name="ExchangeCenterTitle" type="RichTextLabel" parent="ExhangeCenter"]
+margin_left = 56.0
+margin_top = 88.0
+margin_right = 184.0
+margin_bottom = 104.0
+text = "Grand Bazaar
+"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[connection signal="pressed" from="MessageBox01/close_ttree" to="." method="_on_close_ttree_pressed"]
